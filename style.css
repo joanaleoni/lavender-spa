@@ -1,4 +1,4 @@
-/* RESET - para resetar as configurações padrão do navegador*/
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ img {
     height: auto;
 }
 
-/* VARIÁVEIS */
+/* VARIABLES */
 :root {
     --header-height: 4.5rem;
 
@@ -130,7 +130,6 @@ body {
     border-bottom: 1px solid #E4E4E4;
     margin-bottom: 2rem;
     display: flex;
-    /* para manter mostrando a header mesmo quando descer a página*/
     position: fixed;
     top: 0;
     left: 0;
@@ -141,18 +140,7 @@ body {
 
 #header.scroll {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-    /*background: var(--base-color);*/
 }
-
-/*
-#header.scroll .logo span {
-    color: white;
-}
-
-#header.scroll .icon-menu {
-    color: white;
-}
-*/
 
 /* LOGO */
 
@@ -220,7 +208,7 @@ nav .menu ul {
    display: none;
 }
 
-/* MOSTRAR MENU */
+/* SHOW MENU */
 
 nav.show .menu {
     opacity: 1;
@@ -314,7 +302,7 @@ nav.show div.icon-close {
     margin-bottom: 2rem;
 }
 
-/* structure */
+/* STRUCTURE */
 
 #structure {
     background: white;
@@ -390,7 +378,7 @@ nav.show div.icon-close {
     margin-right: 0;
 }
 
-#testimonials header {
+#testimonials h2 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 0;
@@ -499,14 +487,6 @@ footer .social a {
     display: inline-block;
 }
 
-/* Exemplo de como deixar as redes sociais lado a lado com grid */
-/* Primeiro: adicionar uma class grid no na div social 
-Segundo: footer .social {
-    grid-auto-flow: column;
-    width: fit-content;
-}
-*/
-
 footer .social a:hover {
     transform: translateY(-8px)
 }
@@ -555,7 +535,7 @@ footer .social a:hover {
     }
 
     .section header,
-    #testimonials header {
+    #testimonials h2 {
         max-width: 32rem;
         text-align: center;
         margin-left: auto;
@@ -601,12 +581,10 @@ footer .social a:hover {
     /* home */
     #home .container {
         grid-auto-flow: column;
-        /* width: fit-content; */
+        width: fit-content;
         justify-content: space-between;
         margin: 0 auto;
     }
-
-    /* A configuração acima deixa um elemento ao lado do outro */
    
     #home .image {
         order: 1;
@@ -618,8 +596,6 @@ footer .social a:hover {
         text-align: left;
     }
     
-    /*order: muda a ordem com que os elementos aparecem. só funciona quando os elemntos estão dentro de uma caixa grid ou caixa flex */
-
     /* structure */
     #structure .container {
         margin: 0 auto;
